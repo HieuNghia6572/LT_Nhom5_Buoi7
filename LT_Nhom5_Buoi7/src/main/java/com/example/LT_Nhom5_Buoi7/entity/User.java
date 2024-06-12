@@ -1,10 +1,12 @@
 package com.example.LT_Nhom5_Buoi7.entity;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
 import java.util.HashSet;
 import java.util.Set;
-
+@Data
+@Entity
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
