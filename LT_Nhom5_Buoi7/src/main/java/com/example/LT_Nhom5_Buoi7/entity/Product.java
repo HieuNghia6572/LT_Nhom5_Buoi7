@@ -2,8 +2,14 @@ package com.example.LT_Nhom5_Buoi7.entity;
 
 import jakarta.persistence.*;
 import jdk.jfr.Category;
-import lombok.Data;
+import lombok.*;
 
+@Getter
+@Setter
+@ToString
+@RequiredArgsConstructor
+@AllArgsConstructor
+@Builder
 @Data
 @Entity
 public class Product {

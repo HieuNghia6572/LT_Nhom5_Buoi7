@@ -1,10 +1,16 @@
 package com.example.LT_Nhom5_Buoi7.entity;
 
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.*;
 
 import java.util.HashSet;
 import java.util.Set;
+@Getter
+@Setter
+@ToString
+@RequiredArgsConstructor
+@AllArgsConstructor
+@Builder
 @Data
 @Entity
 public class User {
