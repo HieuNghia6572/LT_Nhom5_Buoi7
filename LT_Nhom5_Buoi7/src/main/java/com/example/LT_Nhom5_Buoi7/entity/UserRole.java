@@ -2,6 +2,7 @@ package com.example.LT_Nhom5_Buoi7.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
+import jakarta.persistence.Table;
 import lombok.*;
 
 import java.io.Serializable;
@@ -12,6 +13,7 @@ import java.io.Serializable;
 @AllArgsConstructor
 @Builder
 @Embeddable
+@Table(name="user_role")
 public class UserRole implements Serializable {
     @Column(name = "user_id")
     private Integer user;
