@@ -1,7 +1,26 @@
 package com.example.LT_Nhom5_Buoi7.controller;
 
-public class AdminProductController {
-    /*@RequestMapping("admin/products")
+
+import com.example.LT_Nhom5_Buoi7.entity.Product;
+import com.example.LT_Nhom5_Buoi7.services.CategoryService;
+import com.example.LT_Nhom5_Buoi7.services.ProductService;
+import jakarta.validation.Valid;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
+
+import java.io.File;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
+import java.util.UUID;
+
+@RequestMapping("admin/products")
     @Controller
     public class AdminProductController {
         @Autowired
@@ -80,5 +99,5 @@ public class AdminProductController {
             productService.edit(editProduct);
             return "redirect:/admin/products";
         }
-    }*/
-}
+    }
+
